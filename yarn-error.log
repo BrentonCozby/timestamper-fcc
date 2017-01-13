@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/bin/nodejs /usr/bin/yarn init
+
+PATH: 
+  /home/brenton/bin:/home/brenton/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  0.18.1
+
+Node version: 
+  6.9.2
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "timestamper-fcc",
+    "version": "0.0.0",
+    "description": "A timestamp microservice. Free Code Camp backend project.",
+    "engines": {
+      "node": "5.9.1"
+    },
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "ejs": "2.4.1",
+      "express": "4.13.3"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/BrentonCozby/timestamper-fcc.git"
+    },
+    "keywords": [
+      "node",
+      "heroku",
+      "express",
+      "freeCodeCamp"
+    ],
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  TypeError: Cannot convert object to primitive value
+      at Object.<anonymous> (/usr/lib/node_modules/yarn/lib/cli/commands/init.js:93:27)
+      at next (native)
+      at step (/usr/lib/node_modules/yarn/node_modules/babel-runtime/helpers/asyncToGenerator.js:17:30)
+      at /usr/lib/node_modules/yarn/node_modules/babel-runtime/helpers/asyncToGenerator.js:28:13
+      at process._tickCallback (internal/process/next_tick.js:103:7)
