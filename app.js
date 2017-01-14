@@ -20,10 +20,11 @@ app.get('/:timestamp', (req, res) => {
         date = new Date(+req.params.timestamp * 1000);
     }
 
-    res.end(JSON.stringify({
+    res.set('Content-Type', 'application/json');
+    res.send(JSON.stringify({
         unix: date.getTime() / 1000,
         natural: date.toLocaleDateString()
-    }));
+    }, null, 3));
 });
 
 app.listen(app.get('port'), function() {
